@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
 @import "normalize.css";
+@import "./styles/variables.scss";
 
 *,
 *:before,
