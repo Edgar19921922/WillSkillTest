@@ -12,4 +12,6 @@ export type TFontWeight =
   | "900";
 
 export type THeight = "full";
-//TODO: add font family, fontSize, fontColor
+export type TFontSize = "18" | "24" | "36" | "48";
+export type TFontFamily = "rubik";
+export type TColor = "white" | "black";
