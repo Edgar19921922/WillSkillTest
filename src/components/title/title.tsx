@@ -88,6 +88,10 @@ export const Title: TFC<ITitleProps> = ({
         </h6>
       );
     default:
-      return <h1 className={styles.h1}>{children}</h1>;
+      return (
+        <h1 className={cn(styles.h1, styles["font-family-rubik"], className)}>
+          {children}
+        </h1>
+      );
   }
 };
