@@ -6,11 +6,17 @@ type TArg = Record<string, unknown>;
 export const getOptionalClasses = (props: any, styles: any): TArg => {
   const newProps: any = {};
   for (const key in props) {
+    const kebabKey = key
+      .replace(/([A-Z])/g, (found) => {
+        return ` ${found.toLowerCase()}`;
+      })
+      .split(" ")
+      .join("-");
     if (typeof props[key] === "boolean") {
-      newProps[styles[key.slice(2).toLowerCase()]] = props[key];
+      newProps[styles[kebabKey.slice(3)]] = props[key];
       continue;
     }
-    newProps[styles[`${key}-${props[key]}`]] = props[key];
+    newProps[styles[`${kebabKey}-${props[key]}`]] = props[key];
   }
   return newProps;
 };
