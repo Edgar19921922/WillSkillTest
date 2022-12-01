@@ -23,7 +23,7 @@
 
 .productsImg {
   margin-top: 60px;
-  @include md {
+  @include xl-less {
     flex-direction: column;
   }
 }

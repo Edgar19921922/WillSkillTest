@@ -33,6 +33,13 @@ $sm-mw: 576px;
   }
 }
 
+@mixin md-less {
+  @media (max-width: $md-mw) {
+    @content;
+  }
+}
+
+
 @mixin fontSize($fs) {
   @include xl {
     font-size: calc($fs * 0.9);
@@ -50,3 +57,4 @@ $sm-mw: 576px;
     font-size: calc($fs * 0.3);
   }
 }
+

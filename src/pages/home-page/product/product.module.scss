@@ -1,3 +1,5 @@
+@import "../../../styles/mixins.scss";
+
 .product {
   background-image: url("../../../assets/images/product-bg.png");
   background-repeat: no-repeat;
@@ -7,14 +9,19 @@
 }
 
 .title {
-  line-height: 152px;
   position: relative;
+  line-height: 156px;
   z-index: 2;
+  @include xl-less {
+    line-height: normal;
+  }
 }
 
 .titleDescription {
   margin-top: 24px;
   max-width: 672px;
+  position: relative;
+  z-index: 2;
 }
 
 .subTitle {
@@ -24,6 +31,8 @@
 .subTitleDescription {
   margin-top: 16px;
   max-width: 364px;
+  position: relative;
+  z-index: 2;
 }
 
 .mainImgWrapper {
@@ -36,4 +45,22 @@
   right: 2px;
   top: -32px;
   z-index: 1;
+  height: 835px;
+  width: 685px;
+  @include xl {
+    height: 700px;
+    width: 550px;
+  }
+  @include lg {
+    height: 570px;
+    width: 420px;
+  }
+  @include md {
+    height: 470px;
+    width: 320px;
+  }
+  @include sm {
+    height: 235px;
+    width: 160px;
+  }
 }
