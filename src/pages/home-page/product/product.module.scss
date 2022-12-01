@@ -1,0 +1,39 @@
+.product {
+  background-image: url("../../../assets/images/product-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 96px;
+  padding-top: 96px;
+}
+
+.title {
+  line-height: 152px;
+  position: relative;
+  z-index: 2;
+}
+
+.titleDescription {
+  margin-top: 24px;
+  max-width: 672px;
+}
+
+.subTitle {
+  margin-top: 120px;
+}
+
+.subTitleDescription {
+  margin-top: 16px;
+  max-width: 364px;
+}
+
+.mainImgWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.mainImg {
+  position: absolute;
+  left: -410px;
+  top: -176px;
+  z-index: 1;
+}
