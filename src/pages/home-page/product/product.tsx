@@ -4,7 +4,7 @@ import { FlexContainer } from "../../../components/containers/flex-container/fle
 import { P } from "../../../components/p/p";
 import { Title } from "../../../components/title/title";
 
-import mainImg from "../../../assets/images/main-img.png";
+import productSrc from "../../../assets/images/product.png";
 
 import styles from "./product.module.scss";
 
@@ -33,7 +33,13 @@ export const Product: FC = () => {
             </P>
           </div>
           <div className={styles.mainImgWrapper}>
-            <img className={styles.mainImg} src={mainImg} alt="nooTRiS" />
+            <img
+              className={styles.mainImg}
+              height={835}
+              width={685}
+              src={productSrc}
+              alt="nooTRiS"
+            />
           </div>
         </FlexContainer>
       </Container>
