@@ -15,19 +15,31 @@ export const Header: FC = () => {
       <FlexContainer align="center" height="full">
         <Container>
           <nav>
-            <FlexContainer align="center" height="full" justify="between">
-              <Logo />
-              <FlexContainer gap={40}>
-                <InnerLink to="">FAQ</InnerLink>
-                <InnerLink to="">Оплата и доставка</InnerLink>
-                <InnerLink to="">Возврат</InnerLink>
-                <InnerLink to="">Исследования</InnerLink>
-                <InnerLink to="">Личный кабинет</InnerLink>
+            <FlexContainer
+              align="center"
+              height="full"
+              justify="between"
+              gap={104}
+            >
+              <div>
+                <Logo />
+              </div>
+              <FlexContainer gap={76}>
+                <FlexContainer gap={40}>
+                  <InnerLink to="/faq">FAQ</InnerLink>
+                  <InnerLink to="/payment">Оплата и доставка</InnerLink>
+                  <InnerLink to="/return">Возврат</InnerLink>
+                  <InnerLink to="/research">Исследования</InnerLink>
+                  <InnerLink to="/owner-room">Личный кабинет</InnerLink>
+                  <a
+                    className={styles.phoneNumber}
+                    href="tel:8-8-800-600-09-90"
+                  >
+                    8 8 (800) 600-09-90
+                  </a>
+                </FlexContainer>
+                <Basket />
               </FlexContainer>
-              <a className={styles.phoneNumber} href="tel:8-8-800-600-09-90">
-                8 8 (800) 600-09-90
-              </a>
-              <Basket />
             </FlexContainer>
           </nav>
         </Container>
