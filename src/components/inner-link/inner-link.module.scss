@@ -5,3 +5,8 @@
   font-family: "Rubik", sans-serif;
   text-decoration: none;
 }
+
+.activeClassName {
+  transform: scale(1.1);
+  color: var(--orange);
+}
