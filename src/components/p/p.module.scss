@@ -1,13 +1,17 @@
+@import "../../styles/mixins.scss";
+
 .font-family-rubik {
   font-family: "Rubik", sans-serif;
 }
 
 .font-size-18 {
   font-size: 18px;
+  @include fontSize(18px);
 }
 
 .font-size-24 {
   font-size: 24px;
+  @include fontSize(24px);
 }
 
 .color-black {

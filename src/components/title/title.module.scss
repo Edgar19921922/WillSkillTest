@@ -1,15 +1,24 @@
+@import "../../styles/mixins.scss";
+
+$h1: 144px;
+$h2: 48px;
+$h3: 36px;
+
 .h1 {
   font-weight: 700;
-  font-size: 144px;
+  font-size: $h1;
   color: white;
+  @include fontSize($h1);
 }
 
 .h2-font-size-48 {
   font-size: 48px;
+  @include fontSize($h2);
 }
 
 .h3-font-size-36 {
   font-size: 36px;
+  @include fontSize($h3);
 }
 
 .color-white {
