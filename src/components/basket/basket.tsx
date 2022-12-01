@@ -5,7 +5,7 @@ import { ReactComponent as BasketIcon } from "../../assets/icons/basket.svg";
 import styles from "./basket.module.scss";
 
 export const Basket: FC = () => {
-  const [count] = useState(3);
+  const [count] = useState(1);
   return (
     <div className={styles.wrapper}>
       <BasketIcon />
