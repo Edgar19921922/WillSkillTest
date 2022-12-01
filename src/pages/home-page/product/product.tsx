@@ -31,13 +31,7 @@ export const Product: FC = () => {
             <P className={styles.subTitleDescription} fontSize="18">
               Вашему организму во время пандемии и сезонных простуд
             </P>
-            <img
-              className={styles.mainImg}
-              height={835}
-              width={685}
-              src={productSrc}
-              alt="nooTRiS"
-            />
+            <img className={styles.mainImg} src={productSrc} alt="nooTRiS" />
           </div>
           <div></div>
         </FlexContainer>
