@@ -1,5 +1,5 @@
 .order {
-  background-color: black;
+  background-color: var(--light-black);
   padding-top: 120px;
   position: relative;
   padding-bottom: 112px;
@@ -39,12 +39,4 @@
 
 .orderButton {
   margin-top: 64px;
-  font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  background: #fcb500;
-  border-radius: 7px;
-  width: 256px;
-  height: 56px;
-  font-size: 18px;
-  cursor: pointer;
 }

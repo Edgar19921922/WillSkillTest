@@ -10,6 +10,7 @@ import nootris from "../../../assets/images/nootris.png";
 import virus from "../../../assets/images/virus.png";
 
 import styles from "./order.module.scss";
+import { Button } from "../../../components/button/button";
 
 export const Order: FC = () => {
   return (
@@ -53,7 +54,7 @@ export const Order: FC = () => {
               <span className={styles.productSecondDescription}>
                 Специальная цена
               </span>
-              <button className={styles.orderButton}>Оформить заказ!</button>
+              <Button className={styles.orderButton}>Оформить заказ!</Button>
             </FlexContainer>
             <Card
               firsRow="Нейтрализует"
