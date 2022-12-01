@@ -21,6 +21,7 @@ export const Order: FC = () => {
             title="h2"
             color="white"
             fontSize="48"
+            fontWeight="700"
             className={styles.orderTitle}
           >
             <span>ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА</span>
