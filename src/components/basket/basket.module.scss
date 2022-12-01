@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 12px;
+  z-index: 1;
+  right: -6px;
+  top: 20px;
+}
