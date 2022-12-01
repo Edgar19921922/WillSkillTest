@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+
+.header {
+  background-color: #111111;
+  height: 80px;
+}
+.phoneNumber {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.primaryNavigation {
+  @include xl-less {
+    display: none;
+  }
+}
+
+.button {
+  display: none;
+  @include xl-less {
+    display: block;
+  }
+}
+
+.innerLinkWrapper {
+  max-width: 960px;
+  width: 100%;
+}
