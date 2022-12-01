@@ -8,6 +8,7 @@ import { HomePage } from "./pages/home-page/home-page";
 import { GoBack } from "./components/go-back/go-back";
 import { Container } from "./components/containers/container/container";
 
+import "burger-menu/lib/index.css";
 import "./index.css";
 
 const router = createBrowserRouter([
