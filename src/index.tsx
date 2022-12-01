@@ -10,15 +10,18 @@ import { Container } from "./components/containers/container/container";
 
 import "burger-menu/lib/index.css";
 import "./index.css";
+import { ErrorPage } from "./pages/error-page";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <HomePage />,
+        errorElement: <ErrorPage />,
       },
       {
         path: "/faq",
@@ -27,6 +30,7 @@ const router = createBrowserRouter([
             <GoBack />
           </Container>
         ),
+        errorElement: <ErrorPage />,
       },
       {
         path: "/payment",
@@ -35,6 +39,7 @@ const router = createBrowserRouter([
             <GoBack />
           </Container>
         ),
+        errorElement: <ErrorPage />,
       },
       {
         path: "/return",
@@ -43,6 +48,7 @@ const router = createBrowserRouter([
             <GoBack />
           </Container>
         ),
+        errorElement: <ErrorPage />,
       },
       {
         path: "/research",
@@ -51,6 +57,7 @@ const router = createBrowserRouter([
             <GoBack />
           </Container>
         ),
+        errorElement: <ErrorPage />,
       },
       {
         path: "/owner-room",
@@ -59,6 +66,7 @@ const router = createBrowserRouter([
             <GoBack />
           </Container>
         ),
+        errorElement: <ErrorPage />,
       },
     ],
   },
@@ -72,3 +80,4 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
