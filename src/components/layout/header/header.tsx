@@ -3,10 +3,11 @@ import { FC } from "react";
 import { Container } from "../../containers/container/container";
 import { FlexContainer } from "../../containers/flex-container/flex-container";
 import { ReactComponent as Logo } from "../../../assets/logo/logo.svg";
-import { ReactComponent as Icon } from "../../../assets/icons/basket.svg";
+
 import { InnerLink } from "../../inner-link/inner-link";
 
 import styles from "./header.module.scss";
+import { Basket } from "../../basket/basket";
 
 export const Header: FC = () => {
   return (
@@ -26,7 +27,7 @@ export const Header: FC = () => {
               <a className={styles.phoneNumber} href="tel:8-8-800-600-09-90">
                 8 8 (800) 600-09-90
               </a>
-              <Icon />
+              <Basket />
             </FlexContainer>
           </nav>
         </Container>
