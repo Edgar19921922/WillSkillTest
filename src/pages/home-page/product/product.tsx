@@ -13,7 +13,7 @@ export const Product: FC = () => {
     <section className={styles.product}>
       <Container>
         <FlexContainer justify="between">
-          <div>
+          <div className={styles.mainImgWrapper}>
             <Title className={styles.title}>АКТИВИРУЙ ИММУНИТЕТ!</Title>
             <P className={styles.titleDescription} fontSize="24">
               Всего пять секунд в день помогут укрепить иммунитет и повысить
@@ -31,8 +31,6 @@ export const Product: FC = () => {
             <P className={styles.subTitleDescription} fontSize="18">
               Вашему организму во время пандемии и сезонных простуд
             </P>
-          </div>
-          <div className={styles.mainImgWrapper}>
             <img
               className={styles.mainImg}
               height={835}
@@ -41,6 +39,7 @@ export const Product: FC = () => {
               alt="nooTRiS"
             />
           </div>
+          <div></div>
         </FlexContainer>
       </Container>
     </section>
