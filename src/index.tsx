@@ -24,21 +24,21 @@ root.render(
   <React.StrictMode>
     <BrowserRouter basename="/">
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route element={<HomePage />} index={true} />
+        <Route element={<HomePage />} path="/" />
+        {/* <Route path="/" element={<App />}>
           <Route path="faq" element={goBack} />
           <Route path="payment" element={goBack} />
           <Route path="return" element={goBack} />
           <Route path="research" element={goBack} />
           <Route path="owner-room" element={goBack} />
-        </Route>
+        </Route> */}
       </Routes>
     </BrowserRouter>
     <div
       style={{
         width: 300,
         height: 300,
-        backgroundColor: "black",
+        backgroundColor: "yellow",
       }}
     >
       12345
