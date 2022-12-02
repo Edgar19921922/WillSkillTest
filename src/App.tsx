@@ -18,13 +18,8 @@ const goBack = (
 );
 
 export const App = () => {
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate("home");
-  }, []);
-
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/WillSkillTest">
       <Header />
       <main>
         <Routes>
@@ -34,6 +29,7 @@ export const App = () => {
           <Route path="return" element={goBack} />
           <Route path="research" element={goBack} />
           <Route path="owner-room" element={goBack} />
+          <Route path="*" element={<Navigate to={"/home"} replace />} />
         </Routes>
       </main>
     </BrowserRouter>
