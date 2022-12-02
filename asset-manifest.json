@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WillSkillTest/static/css/main.c03c39a8.css",
-    "main.js": "/WillSkillTest/static/js/main.0abe472e.js",
+    "main.js": "/WillSkillTest/static/js/main.ed9ec135.js",
     "static/media/product-bg.png": "/WillSkillTest/static/media/product-bg.53ca505eb07b558a5b1c.png",
     "static/media/product.png": "/WillSkillTest/static/media/product.44ad62b4bed8f82a0e33.png",
     "static/media/nootris.png": "/WillSkillTest/static/media/nootris.8192f2cd9dd4db25bd2b.png",
@@ -12,10 +12,10 @@
     "index.html": "/WillSkillTest/index.html",
     "static/media/burger-menu.svg": "/WillSkillTest/static/media/burger-menu.36c79c1f9279ed47c3d2bb86bd289f8f.svg",
     "main.c03c39a8.css.map": "/WillSkillTest/static/css/main.c03c39a8.css.map",
-    "main.0abe472e.js.map": "/WillSkillTest/static/js/main.0abe472e.js.map"
+    "main.ed9ec135.js.map": "/WillSkillTest/static/js/main.ed9ec135.js.map"
   },
   "entrypoints": [
     "static/css/main.c03c39a8.css",
-    "static/js/main.0abe472e.js"
+    "static/js/main.ed9ec135.js"
   ]
 }
