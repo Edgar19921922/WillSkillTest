@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { App } from "./app";
 import { HomePage } from "./pages/home-page/home-page";
 
 import { GoBack } from "./components/go-back/go-back";
@@ -10,74 +9,39 @@ import { Container } from "./components/containers/container/container";
 
 import "burger-menu/lib/index.css";
 import "./index.css";
-import { ErrorPage } from "./pages/error-page";
+import { App } from "./App";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "/faq",
-        element: (
-          <Container>
-            <GoBack />
-          </Container>
-        ),
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "/payment",
-        element: (
-          <Container>
-            <GoBack />
-          </Container>
-        ),
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "/return",
-        element: (
-          <Container>
-            <GoBack />
-          </Container>
-        ),
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "/research",
-        element: (
-          <Container>
-            <GoBack />
-          </Container>
-        ),
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "/owner-room",
-        element: (
-          <Container>
-            <GoBack />
-          </Container>
-        ),
-        errorElement: <ErrorPage />,
-      },
-    ],
-  },
-]);
+const goBack = (
+  <Container>
+    <GoBack />
+  </Container>
+);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter basename="/">
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route element={<HomePage />} index={true} />
+          <Route path="faq" element={goBack} />
+          <Route path="payment" element={goBack} />
+          <Route path="return" element={goBack} />
+          <Route path="research" element={goBack} />
+          <Route path="owner-room" element={goBack} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    <div
+      style={{
+        width: 300,
+        height: 300,
+        backgroundColor: "black",
+      }}
+    >
+      12345
+    </div>
   </React.StrictMode>
 );
-
