@@ -15,6 +15,7 @@ export const App = () => {
     <BrowserRouter basename="/">
       <Header />
       <main>
+        <div>figulya</div>
         <Routes>
           <Route element={<HomePage />} path="/" />
           <Route path="faq" element={goBack} />
@@ -22,7 +23,10 @@ export const App = () => {
           <Route path="return" element={goBack} />
           <Route path="research" element={goBack} />
           <Route path="owner-room" element={goBack} />
-          <Route path="*" element={<Navigate to={"/"} replace />} />
+          <Route
+            path="*"
+            element={<Navigate to={"/WillSkillTest/"} replace />}
+          />
         </Routes>
       </main>
     </BrowserRouter>
